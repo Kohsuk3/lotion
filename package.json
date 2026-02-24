@@ -1,0 +1,26 @@
+{
+  "name": "lotion",
+  "version": "0.1.0",
+  "description": "Notion → Local Markdown Sync CLI",
+  "type": "module",
+  "bin": {
+    "lotion": "./bin/lotion.ts"
+  },
+  "scripts": {
+    "dev": "bun run bin/lotion.ts",
+    "build": "bun build bin/lotion.ts --compile --outfile dist/lotion"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.4.0",
+    "@notionhq/client": "^5",
+    "commander": "^12.1.0",
+    "js-yaml": "^4.1.0",
+    "p-limit": "^6.1.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "bun-types": "latest",
+    "typescript": "^5.7.2"
+  }
+}

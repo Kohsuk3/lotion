@@ -1,0 +1,4 @@
+node_modules/
+dist/
+*.lotion.yaml
+.lotion-state.json
